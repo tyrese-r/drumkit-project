@@ -5,8 +5,8 @@
   grid-template-rows: repeat(24, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 80vw;
-  height: 80vw;
+  width: 60vw;
+  height: 60vw;
   /* max-width: 728px;
   max-width: 728px; */
 }
@@ -27,6 +27,38 @@
   grid-column-start: 1;
   grid-row-end: -1;
   grid-column-end: -1;
+}
+
+/* Flex */
+
+main {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+@media (min-width: 1025px) {
+  /* CSS for desktops */
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  /* CSS for tablets */
+  .drum-image-grid {
+    width: 100vw;
+    height: 100vw;
+  }
+}
+
+@media (max-width: 480px) {
+  /* CSS for mobiles */
+
+  .drum-image-grid {
+    width: 100vw;
+    height: 100vw;
+  }
 }
 
 /* Position the drums */
