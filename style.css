@@ -3,6 +3,16 @@
 
 body {
   font-family: 'Quicksand', sans-serif;
+  margin: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 80px;
 }
 .drum-image-grid {
   display: grid;
@@ -10,10 +20,12 @@ body {
   grid-template-rows: repeat(24, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 90vh;
-  height: 90vh;
+  width: 70vh;
+  height: 70vh;
 
-  border: 1px solid red;
+  border: 3px solid black;
+
+  padding: 10px;
   /* max-width: 728px;
   max-width: 728px; */
 }
@@ -41,6 +53,8 @@ body {
 
 main {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -55,8 +69,8 @@ main {
 @media (min-width: 481px) and (max-width: 822px) {
   /* CSS for tablets */
   .drum-image-grid {
-    width: 100vw;
-    height: 100vw;
+    width: 90vw;
+    height: 90vw;
   }
 }
 
@@ -64,8 +78,8 @@ main {
   /* CSS for mobiles */
 
   .drum-image-grid {
-    width: 100vw;
-    height: 100vw;
+    width: 90vw;
+    height: 90vw;
   }
 }
 
@@ -132,6 +146,8 @@ main {
   align-content: center;
   justify-content: center;
   align-items: center;
+
+  
 }
 
 /* #ride {
