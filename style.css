@@ -19,7 +19,8 @@
 
 .btn-drum {
   background: none;
-  border: 1px solid red;
+  border: none;
+  /* border: 1px solid red; */
   z-index: 2;
 }
 .drum-image {
@@ -44,7 +45,7 @@ main {
   /* CSS for desktops */
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 481px) and (max-width: 822px) {
   /* CSS for tablets */
   .drum-image-grid {
     width: 100vw;
@@ -63,57 +64,64 @@ main {
 
 /* Position the drums */
 
-#crash {
+#ride {
   grid-area: 2 / 5 / 4 / 12;
 }
 
-#bass-drum {
+#medium-tom {
   grid-area: 5 / 9 / 10 / 14;
 }
 
-#floor-tom {
+#crash {
   grid-area: 2 / 16 / 4 / 23;
 }
 
-#hi-hat {
+#high-tom {
   grid-area: 5 / 14 / 9 / 17;
 }
 
-#high-tom {
+#hi-hat {
   grid-area: 5 / 19 / 7 / 23;
 }
 
-#medium-tom {
+#floor-tom {
   grid-area: 7 / 6 / 13 / 9;
 }
-#medium-tom-2 {
+#floor-tom-2 {
   grid-area: 10 / 9 / 13 / 10;
 }
-#medium-tom-3 {
+#floor-tom-3 {
   grid-area: 10 / 10 / 12 / 11;
 }
 
 
-#ride {
+#snare {
+  grid-area: 8 / 17 / 10 / 19;
+}
+#snare-2 {
+  grid-area: 9 / 14 / 10 / 17;
+}
+
+#bass-drum {
+  grid-area: 10 / 11 / 18 / 18;
+}
+
+#bass-drum-2 {
+  grid-area: 12 / 10;
+}
+#bass-drum-3 {
+  grid-area: 13 / 9 / 18 / 11;
+}
+#bass-drum-4 {
+  grid-area: 18 / 10 / 19 / 17;
+}
+#bass-drum-5 {
+  grid-area: 19 / 12 / 20 / 15;
+}
+
+/* #ride {
   grid-area: 8 / 17 / 10 / 19;
 }
 #ride-2 {
   grid-area: 9 / 14 / 10 / 17;
-}
-
-#snare {
-  grid-area: 10 / 11 / 18 / 18;
-}
-
-#snare-2 {
-  grid-area: 12 / 10;
-}
-#snare-3 {
-  grid-area: 13 / 9 / 18 / 11;
-}
-#snare-4 {
-  grid-area: 18 / 10 / 19 / 17;
-}
-#snare-5 {
-  grid-area: 19 / 12 / 20 / 15;
-}
+} */
