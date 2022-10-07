@@ -1,4 +1,87 @@
+
+.drum-image-grid {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 80vw;
+  height: 80vw;
+  /* max-width: 728px;
+  max-width: 728px; */
+}
+
+
+.drum-image-grid > * {
+  width: 100%;
+
+}
+
 .btn-drum {
-    width: 100px;
-    height: 100px;
+  background: none;
+  border: 1px solid red;
+  z-index: 2;
+}
+.drum-image {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: -1;
+  grid-column-end: -1;
+}
+
+/* Position the drums */
+
+#crash {
+  grid-area: 2 / 5 / 4 / 12;
+}
+
+#bass-drum {
+  grid-area: 5 / 9 / 10 / 14;
+}
+
+#floor-tom {
+  grid-area: 2 / 16 / 4 / 23;
+}
+
+#hi-hat {
+  grid-area: 5 / 14 / 9 / 17;
+}
+
+#high-tom {
+  grid-area: 5 / 19 / 7 / 23;
+}
+
+#medium-tom {
+  grid-area: 7 / 6 / 13 / 9;
+}
+#medium-tom-2 {
+  grid-area: 10 / 9 / 13 / 10;
+}
+#medium-tom-3 {
+  grid-area: 10 / 10 / 12 / 11;
+}
+
+
+#ride {
+  grid-area: 8 / 17 / 10 / 19;
+}
+#ride-2 {
+  grid-area: 9 / 14 / 10 / 17;
+}
+
+#snare {
+  grid-area: 10 / 11 / 18 / 18;
+}
+
+#snare-2 {
+  grid-area: 12 / 10;
+}
+#snare-3 {
+  grid-area: 13 / 9 / 18 / 11;
+}
+#snare-4 {
+  grid-area: 18 / 10 / 19 / 17;
+}
+#snare-5 {
+  grid-area: 19 / 12 / 20 / 15;
 }

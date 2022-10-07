@@ -1,5 +1,6 @@
 // Play sound function
 const playSound = (soundFileName) => {
+    console.log(soundFileName)
     const sound = new Audio(`./assets/${soundFileName}.wav`)
     sound.play()
 }
@@ -9,6 +10,9 @@ const drumButtons = document.querySelectorAll('.btn-drum')
 
 // Add event listener to relevant sound for each one
 drumButtons.forEach((btn) => {
-    // Get sound name from id then run function when clicked
-    btn.addEventListener('click', () => playSound(btn.id))
+
+    // Get id and remove number at the end
+    const btnId = btn.id.replace(/-[1-9]+$/, '')
+
+    btn.addEventListener('click', () => playSound(btnId))
 })
