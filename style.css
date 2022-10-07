@@ -1,12 +1,19 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+body {
+  font-family: 'Quicksand', sans-serif;
+}
 .drum-image-grid {
   display: grid;
   grid-template-columns: repeat(24, 1fr);
   grid-template-rows: repeat(24, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  width: 60vw;
-  height: 60vw;
+  width: 90vh;
+  height: 90vh;
+
+  border: 1px solid red;
   /* max-width: 728px;
   max-width: 728px; */
 }
@@ -117,6 +124,14 @@ main {
 }
 #bass-drum-5 {
   grid-area: 19 / 12 / 20 / 15;
+}
+
+#sound-text-container {
+  grid-area: 21 / 1 / 25/ 25;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 /* #ride {
